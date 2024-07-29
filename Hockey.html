@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey</title>
+    <style>
+         .head {
+            background-color: black;
+            height: 550px;
+            width: 90%;
+            margin: 0 auto;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(253, 250, 251);
+            text-align: center;
+        }
+        .head h1 {
+            font-size: 50px;
+            margin-left: 400px;
+            transform: translateY(30px);
+            animation-name: right;
+            animation-duration: 5s;
+            z-index: 1;
+        }
+        @keyframes right {
+            from {
+                transform: translateX(700px);
+            }
+            to {
+                transform: translateX(0px);
+            }
+        }
+        .head img {
+            height: 100%;
+            width: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation-name: left;
+            animation-duration: 5s;
+        }
+        @keyframes left {
+            from {
+                transform: translateX(-700px);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+        .h h1 {
+            text-align: center;
+            font-size: 60px;
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>Detailed Hockey<br>Match News &<br>Reviews...</h1>
+        <img src="images/hockey bg.jpg" alt="Cricket Image">
+    </div>
+    <div class="h">
+        <h1>Hockey</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>football</title>
+    <style>
+         .head {
+            background-color: black;
+            height: 550px;
+            width: 90%;
+            margin: 0 auto;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(253, 250, 251);
+            text-align: center;
+        }
+        .head h1 {
+            font-size: 50px;
+            margin-left: 400px;
+            transform: translateY(30px);
+            animation-name: right;
+            animation-duration: 5s;
+            z-index: 1;
+        }
+        @keyframes right {
+            from {
+                transform: translateX(700px);
+            }
+            to {
+                transform: translateX(0px);
+            }
+        }
+        .head img {
+            height: 100%;
+            width: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation-name: left;
+            animation-duration: 5s;
+        }
+        @keyframes left {
+            from {
+                transform: translateX(-700px);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+        .h h1 {
+            text-align: center;
+            font-size: 60px;
+            color: crimson;
+        }
+
+        .fam{
+    width: 90%;
+    border-radius: 20px;
+    margin-left:70px ;
+    margin-bottom: 50px;  
+}
+        .c img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+        .C{
+    margin-left: 0px;
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+    padding: 20px 20px;
+}
+.c{
+    width: 200px;
+    height: 300px;
+    transition: 300ms ease-in-out;
+    box-shadow: 0px 5px 10px 0px #0a0a0a7c;
+}
+.c + .c{
+    margin-left: -10%;
+}
+.c:hover{
+    transform: rotate(-6deg);
+}
+.c:hover ~ .c {
+    translate: 120px;
+}
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>Detailed Football<br>Match News &<br>Reviews...</h1>
+        <img src="images/foot bg.avif" alt="Cricket Image">
+    </div>
+    <div class="h">
+        <h1>FootBall</h1>
+    </div>
+    <div class="fam">
+     <div class="C">
+         <div class="c">
+             <img src="images/dhoni 1.jpeg">
+         </div>
+         <div class="c">
+             <img src="images/ronaldo.jpg">
+         </div>
+         <div class="c">
+             <img src="images/messi.jpeg">
+         </div>
+         <div class="c">
+             <img src="images/virat.jpg">
+         </div>
+         <div class="c">
+             <img src="images/tennis.jpg">
+         </div>
+         <div class="c">
+             <img src="images/voll.jpeg">
+         </div>
+         <div class="c">
+             <img src="images/hock.jpg">
+         </div>
+         <div class="c">
+             <img src="images/pv.jpg">
+         </div>
+         <div class="c">
+             <img src="images/rina.jpeg">
+         </div>
+         <div class="c">
+             <img src="images/sachin.jpeg">
+         </div>
+     </div>
+     </div>
+<div class="matter">
+    <div class="a"></div>
+</div>
+</body>
+</html>

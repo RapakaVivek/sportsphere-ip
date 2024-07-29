@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket</title>
+    <style>
+        body {
+            background-color: rgb(250, 250, 250);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .head {
+            background-color: black;
+            height: 550px;
+            width: 90%;
+            margin: 0 auto;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(253, 250, 251);
+            text-align: center;
+        }
+        .head h1 {
+            font-size: 50px;
+            margin-left: 400px;
+            animation-name: right;
+            animation-duration: 5s;
+        }
+        @keyframes right {
+            from {
+                transform: translateX(700px);
+            }
+            to {
+                transform: translateX(0px);
+            }
+        }
+        .head img {
+            height: 100%;
+            width: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation-name: left;
+            animation-duration: 5s;
+        }
+        @keyframes left {
+            from {
+                transform: translateX(-700px);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+        .h h1 {
+            text-align: center;
+            font-size: 60px;
+            color: crimson;
+        }
+        .stick {
+            display: flex;
+            column-gap: 50px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        .stick1 {
+            background-color: black;
+            font-size: 15px;
+            height: 400px;
+            width: 250px;
+            border: solid 1px white;
+            text-align: center;
+            border-radius: 20px;
+            position: sticky;
+            top: 20px;
+        }
+        .stick1 a {
+            color: white;
+            text-decoration: none;
+            font-size:10px;
+            display: block;
+            padding: 10px;
+            transition-duration: 2s;
+        }
+        .stick1 a:hover {
+            font-size: 15px;
+            color: orangered;
+        }
+        .stick2 {
+            width: 100%;
+        }
+        .A {
+            border: 1px solid;
+            border-radius: 20px;
+            color: rgb(20, 18, 18);
+            box-shadow: 10px 10px 10px rgb(158, 156, 156);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .A h1 {
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 10px;
+        }
+        .A p {
+            padding: 10px;
+            margin: 0;
+        }
+        .A img {
+            width: 700px;
+            height: 400px;
+            margin-left: 130px;
+            border-radius: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="head">
+        <h1>Detailed Cricket<br>Match News &<br>Reviews...</h1>
+        <img src="images/vivek2.png" alt="Cricket Image">
+    </div>
+    <div class="h">
+        <h1>Cricket Teams</h1>
+    </div>
+    <div class="stick">
+        <div class="stick1">
+             <a href="#1"><h1>India</h1></a>
+             <a href="#2"><h1>Australia</h1></a>
+             <a href="#3"><h1>England</h1></a>
+             <a href="#4"><h1>South Africa</h1></a>
+             <a href="#5"><h1>NewZland</h1></a>
+        </div>
+        <div class="stick2">
+            <div id="1" class="A">
+                <h1>India</h1>
+                <img src="images/ind team.jpg">
+                <p>The Indian men's national cricket team represents India in international cricket.
+                     The Board of Control for Cricket in India (BCCI) manages the team. As of July 26, 2024, 
+                     the team's captains are Rohit Sharma for Test and ODI matches, and Hardik Pandya for
+                      T20I matches. The coaches are:<br><br>
+                    Rahul Dravid: Head coach<br><br>
+                    Paras Mhambrey: Bowling coach<br><br>
+                    Vikram Rathour: Batting coach<br><br>
+                    T Dilip: Fielding coach</p>
+                <a href="#"><p>More</p></a>
+            </div>
+            <div id="2" class="A">
+                <h1>Australia</h1>
+                <img src="images/Australia-1.jpg">
+                <p>They are regarded as most successful cricket teams in the history of Cricket. The national
+                     team has played 866 Test matches, winning 414, losing 232, 218 draw and 2 Tie. As of May 2022,
+                      Australia is ranked first in the ICC Test Championship on 128 rating points.<br><br></p>
+                <a href="#"><p>More</p></a>
+            </div>
+            <div id="3" class="A">
+                <h1>England</h1>
+                <img src="images/england.webp">
+                <p>As of 28 July 2024, England have played 1,074 Test matches, winning 395 and losing 324 (with 355 draws)
+                    . In the Test series against Australia, England play for The Ashes, one of the most famous 
+                    trophies in all of sport, and they have won the urn on 32 occasions. England have also played 
+                    797 ODIs, winning 400.<br><br></p>
+                <a href="#"><p>More</p></a>
+            </div>
+            <div id="4" class="A">
+                <h1>South-Africa</h1>
+                <img src="images/south-africa.jpg">
+                <p>The Proteas, currently ranked third in the ODIs, will be led by none other than the top One-Day
+                     Internationals batsman AB de Villiers. The team boasts eight players with previous World Cup
+                      experience in De Villiers, Hashim Amla, Faf du Plessis, JP Duminy, Wayne Parnell, Morne Morkel,
+                       Dale Steyn and Imran Tahir.<br><br></p>
+                <a href="#"><p>More</p></a>
+            </div>
+            <div id="5" class="A">
+                <h1>NewZland</h1>
+                <img src="images/newzland.webp">
+                <p>New Zealand are the inaugural champions of WTC which they won in 2021 and they have also won ICC CT
+                     in 2000. They have played in the CWC final twice and the T20 WC final once.<br><br></p>
+                <a href="#"><p>More</p></a>
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>
